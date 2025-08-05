@@ -1,0 +1,15 @@
+apiVersion: v1 
+kind: Service
+metadata:
+  name: Service
+  labels:
+    project: roboshop
+    purpose: helm-practice
+spec:
+  selector:
+    project: roboshop
+    puprose: helm-practice
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
